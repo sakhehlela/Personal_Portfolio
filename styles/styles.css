@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -47,6 +51,11 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    min-height: 100vh; /* Ensure each section takes up the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
