@@ -4,14 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sakhe Hlela Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Ensure the main content sections take up the full height of the viewport */
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Additional styling for specific sections */
+        .home-title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="menu-toggle">Menu</div> <!-- Toggle Button for Mobile -->
+            <div class="menu-toggle">Menu</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -25,7 +45,7 @@
 
     <main>
         <section id="home">
-            <h1 class="home-title">Sakhe Hlela Portfolio website</h1>
+            <h1 class="home-title">Sakhe Hlela Portfolio Website</h1>
         </section>
 
         <section id="about">
