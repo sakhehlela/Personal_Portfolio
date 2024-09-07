@@ -1,7 +1,11 @@
-body {
+/* Add or update these styles in your existing CSS file */
+html, body {
+    height: 100%;
     margin: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
-    padding-top: 60px;
     background-color: black;
     color: white;
 }
@@ -41,17 +45,29 @@ nav ul li a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Adjust based on your nav height */
 }
 
 section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
     padding: 20px;
+    box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -81,7 +97,7 @@ section {
     }
 
     main {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 }
 
