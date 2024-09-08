@@ -5,33 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakhe Hlela Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Ensure the main content sections take up the full height of the viewport */
-        section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        /* Additional styling for specific sections */
-        .home-title {
-            font-size: 2em;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link to external CSS file -->
 </head>
 
 <body>
     <header>
+        <div class="sidebar-toggle">Menu</div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/sakhehlela" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
         <nav>
-            <div class="menu-toggle">Menu</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -45,13 +35,13 @@
 
     <main>
         <section id="home">
-            <h1 class="home-title">Sakhe Hlela Portfolio Website</h1>
+            <h1>Sakhe Hlela Portfolio Website</h1>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
             <p>I'm a dedicated Web Development student passionate about creating dynamic, user-friendly websites. With skills in HTML, CSS, and JavaScript, I bring creative ideas to life through clean code. Explore my work to see how I blend creativity and technical expertise to deliver exceptional web solutions.</p>
-            <p><a href="https://docs.google.com/document/d/1mx61i78MvTlBv0fcateJWnPhCE9KgT8xkNczmkrGv1k/edit" target="_blank">View my CV</a></p>
+            <a class="cv-link" href="https://docs.google.com/document/d/1mx61i78MvTlBv0fcateJWnPhCE9KgT8xkNczmkrGv1k/edit" target="_blank">View my CV</a>
         </section>
 
         <section id="skills">
