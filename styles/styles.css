@@ -152,4 +152,13 @@ h1, h2 {
     nav {
         display: none; /* Hide desktop nav on mobile */
     }
+
+    .sidebar-toggle {
+        display: none; /* Hide sidebar toggle on mobile */
+    }
+
+    /* Adjust sections to avoid overlapping */
+    section {
+        padding: 10px;
+    }
 }
