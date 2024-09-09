@@ -111,7 +111,7 @@ h1, h2 {
 
 /* Menu Toggle Styles */
 .menu-toggle {
-    display: none; /* Hide menu toggle by default */
+    display: flex; /* Ensure the menu toggle is visible */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -141,12 +141,4 @@ h1, h2 {
     .sidebar {
         width: 200px; /* Adjust width for smaller screens */
     }
-
-    .menu-toggle {
-        display: flex; /* Show menu toggle for small screens */
-    }
-}
-
-body.sidebar-open .sidebar {
-    left: 0;
 }
