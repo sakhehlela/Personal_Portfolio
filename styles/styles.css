@@ -23,6 +23,7 @@ header, footer {
     color: white;
     padding: 10px 20px;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -108,18 +109,42 @@ h1, h2 {
     color: #ffcc00;
 }
 
-.sidebar-toggle {
-    display: block;
+/* Menu Toggle Styles */
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     background-color: #0073e6;
     color: white;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
+    border: none;
+    font-size: 18px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show menu toggle for small screens */
+    }
 }
 
 body.sidebar-open .sidebar {
