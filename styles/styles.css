@@ -7,6 +7,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
     margin: 0;
+    position: relative; /* To manage z-index issues */
 }
 
 section {
@@ -85,6 +86,7 @@ h1, h2 {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
     z-index: 1000;
+    overflow-y: auto; /* Ensure scrolling if the content overflows */
 }
 
 .sidebar ul {
@@ -111,7 +113,7 @@ h1, h2 {
 
 /* Menu Toggle Styles */
 .menu-toggle {
-    display: flex; /* Ensure the menu toggle is visible */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,9 +138,18 @@ h1, h2 {
     transition: 0.3s;
 }
 
+/* Show sidebar when open */
+.sidebar-open {
+    left: 0;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .sidebar {
         width: 200px; /* Adjust width for smaller screens */
+    }
+
+    nav {
+        display: none; /* Hide desktop nav on mobile */
     }
 }
