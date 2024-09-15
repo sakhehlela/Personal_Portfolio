@@ -25,6 +25,8 @@ header, footer {
     padding: 10px 20px;
     text-align: center;
     position: relative;
+    border: none; /* Ensure no border at the top or bottom */
+    margin: 0; /* Remove any margin that might create spacing issues */
 }
 
 h1 {
@@ -68,6 +70,7 @@ h2 {
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
+    border: none; /* Remove any border if present */
 }
 
 .sidebar ul {
