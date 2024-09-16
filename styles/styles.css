@@ -112,7 +112,7 @@ p {
     text-align: right; /* Moved to the right */
     position: absolute;
     top: 10px;
-    right: 10px; 
+    right: 10px;
 }
 
 .menu-toggle {
@@ -172,13 +172,69 @@ p {
     padding: 20px;
 }
 
-/* Adjust for smaller screens */
+/* Skills Section Specific Styling */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Align skills to the left to improve readability */
+    margin: 20px auto; /* Center the list */
+    max-width: 500px; /* Restrict the width for better visual appeal */
+}
+
+.skills-list li {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* About section layout on mobile */
 @media (max-width: 768px) {
+    #about .overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Adjust the image size for mobile */
+    #about .home-photo {
+        max-width: 80%;
+        height: auto;
+        margin: 20px 0; /* Add margin to avoid overlap */
+    }
+
+    /* Adjust the text size and padding */
+    #about .overlay h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    #about .overlay p {
+        font-size: 1rem;
+        padding: 10px;
+        background-color: rgba(0, 115, 230, 0.8); /* Adjusted background color to allow better readability */
+    }
+
+    /* Ensure proper spacing */
+    .content-section {
+        padding: 20px 10px;
+    }
+
     .sidebar {
         width: 200px;
     }
 
     .menu-toggle {
         display: flex;
+    }
+
+    .skills-list {
+        max-width: 90%;
+        text-align: center;
     }
 }
