@@ -5,69 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakhe Hlela Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Ensure this path is correct -->
 </head>
 
 <body>
-    <header>
-        <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="sidebar">
-            <div class="sidebar-close">&times;</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/sakhehlela" target="_blank">GitHub</a></li>
-            </ul>
-        </div>
-    </header>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <span class="sidebar-close" id="sidebar-close">&times;</span> <!-- Close (X) button -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/sakhehlela" target="_blank">GitHub</a></li> <!-- GitHub link added -->
+        </ul>
+    </nav>
 
-    <main>
-        <section id="home">
-            <h1>Sakhe Hlela Portfolio Website</h1>
-            <img src="images/laptop.jpeg" alt="A description of the photo" class="home-photo">
-        </section>
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
 
-        <section id="about">
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+        <div class="overlay">
+            <h2>Sakhe Hlela Portfolio Website</h2> <!-- Updated text -->
+        </div>
+        <img class="home-photo" src="images/laptop.jpeg" alt="Laptop">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <div class="overlay">
             <h2>About Me</h2>
-            <p>I'm a dedicated Web Development student passionate about creating dynamic, user-friendly websites. With skills in HTML, CSS, and JavaScript, I bring creative ideas to life through clean code. Explore my work to see how I blend creativity and technical expertise to deliver exceptional web solutions.</p>
-            <a class="cv-link" href="https://docs.google.com/document/d/1mx61i78MvTlBv0fcateJWnPhCE9KgT8xkNczmkrGv1k/edit" target="_blank">View my CV</a>
-        </section>
+            <p>I'm a dedicated Web Development student passionate about creating dynamic, user-friendly websites. With skills in HTML, CSS, and JavaScript. Explore my work to see how I blend creativity and technical expertise to deliver exceptional web solutions.</p>
+            <a class="cv-link" href="https://docs.google.com/document/d/1mx61i78MvTlBv0fcateJWnPhCE9KgT8xkNczmkrGv1k/edit" target="_blank">View My CV</a> 
+        </div>
+        <img class="home-photo" src="images/laptop.jpeg" alt="Laptop">
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Data Analytics</li>
-            </ul>
-        </section>
-
-        <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+        <div class="overlay">
             <h2>Projects</h2>
-            <p>I don't have projects to showcase yet.</p>
-        </section>
+            <p>I don't have projects to showcase yet.
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:sakhe.hlela@umuzi.org">sakhe.hlela@umuzi.org</a></p>
-        </section>
-    </main>
+            </p>
+        </div>
+        <img class="home-photo" src="images/laptop.jpeg" alt="Laptop">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="overlay">
+            <h2>Contact Me</h2>
+            <p>Email: sakhe.hlela@umuzi.org</p>
+        </div>
+        <img class="home-photo" src="images/laptop.jpeg" alt="Laptop">
+    </section>
 
     <footer>
         <p>&copy; 2024 Sakhe Hlela. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script> <!-- Ensure this path is correct -->
 </body>
 
 </html>
+
 

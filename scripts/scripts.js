@@ -1,23 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const sidebar = document.querySelector(".sidebar");
-    const sidebarClose = document.querySelector(".sidebar-close");
-    const sidebarLinks = document.querySelectorAll(".sidebar ul li a"); // Select all sidebar links
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarClose = document.getElementById('sidebar-close');
+    const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
 
-    // Toggle sidebar open when menu toggle is clicked
-    menuToggle.addEventListener("click", function () {
-        sidebar.classList.add("sidebar-open");
+    // Toggle sidebar open/close
+    menuToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('sidebar-open');
     });
 
-    // Close sidebar when close button is clicked
-    sidebarClose.addEventListener("click", function () {
-        sidebar.classList.remove("sidebar-open");
+    // Close sidebar when "X" is clicked
+    sidebarClose.addEventListener('click', function() {
+        sidebar.classList.remove('sidebar-open');
     });
 
-    // Close sidebar when any sidebar link is clicked
-    sidebarLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-            sidebar.classList.remove("sidebar-open");
+    // Close sidebar when any menu item is clicked
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            sidebar.classList.remove('sidebar-open');
         });
     });
 });
