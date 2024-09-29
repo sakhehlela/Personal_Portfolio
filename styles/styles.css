@@ -1,24 +1,20 @@
-/* General body styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
     margin: 0;
-    background-color: #0073e6; /* Set solid blue background */
+    background-color: #0073e6; 
 }
 
-/* Maintain structure for sections */
 section {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
     text-align: center;
     overflow: hidden;
 }
 
-/* Header and footer styles */
 header, footer {
     background-color: #005bb5; /* Darker blue for header and footer */
     color: white;
@@ -38,25 +34,23 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Paragraph styling */
 p {
     color: #fff;
     font-size: 1.2rem;
-    background-color: #005bb5; /* Background for readability */
+    background-color: #005bb5; 
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
-    max-width: 90%; /* Restrict width */
+    max-width: 90%; 
     box-sizing: border-box;
-    margin: 0 auto; /* Center the paragraph */
+    margin: 0 auto; 
 }
 
-/* Styling for the CV link */
 .cv-link {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #005bb5; /* Same darker blue */
+    background-color: #005bb5; 
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -65,10 +59,9 @@ p {
 }
 
 .cv-link:hover {
-    background-color: #003d80; /* Darker blue on hover */
+    background-color: #003d80; 
 }
 
-/* Sidebar styling */
 .sidebar {
     position: fixed;
     top: 0;
@@ -104,7 +97,6 @@ p {
     color: #ffcc00;
 }
 
-/* Sidebar close button moved to top right */
 .sidebar-close {
     font-size: 24px;
     color: white;
@@ -116,7 +108,6 @@ p {
     right: 10px;
 }
 
-/* Menu toggle styling */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -147,38 +138,34 @@ p {
     left: 0;
 }
 
-/* Remove photo, solid background */
 .home-photo {
-    display: none; /* No background photo */
+    display: none; 
 }
 
-/* Overlay on top of background for content */
 .overlay {
     position: relative;
     padding: 30px;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.3); /* Subtle translucent background */
+    background: rgba(0, 0, 0, 0.3); 
     width: 80%;
     max-width: 600px;
     margin: auto;
     border-radius: 8px;
 }
 
-/* Prevent overflow of text */
 .content-section {
     position: relative;
     padding: 20px;
     overflow: hidden;
 }
 
-/* Skills Section Specific Styling */
 .skills-list {
     list-style-type: none;
     padding: 0;
     text-align: center;
     margin: 20px auto;
-    max-width: 500px; /* Restrict width */
-    background-color: rgba(0, 0, 0, 0.3); /* Translucent background */
+    max-width: 500px; 
+    background-color: rgba(0, 0, 0, 0.3); 
     border-radius: 8px;
     padding: 20px;
 }
