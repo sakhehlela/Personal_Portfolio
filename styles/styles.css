@@ -15,7 +15,6 @@ section {
     justify-content: center;
     padding: 0;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 /* Header and footer styles */
@@ -116,6 +115,7 @@ p {
     right: 10px;
 }
 
+/* Menu toggle styling */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -171,9 +171,6 @@ p {
 .content-section {
     position: relative;
     padding: 20px;
-    flex-direction: column;
-    align-items: center; 
-    display: flex;
 }
 
 /* Skills Section Specific Styling */
@@ -201,44 +198,29 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
         text-align: center;
     }
 
-    /* Adjust the image size for mobile */
-    #about .home-photo {
-        max-width: 80%;
+    .home-photo {
+        width: 80%;
         height: auto;
-        margin: 20px 0; /* Add margin to avoid overlap */
+        margin: 20px auto;
     }
 
-    /* Adjust the text size and padding */
-    #about .overlay h2 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
-
-    #about .overlay p {
+    p {
         font-size: 1rem;
-        padding: 10px;
-        background-color: rgba(0, 115, 230, 0.8); /* Adjusted background color to allow better readability */
     }
 
-    /* Ensure proper spacing */
-    .content-section {
-        padding: 20px 10px;
+    h2 {
+        font-size: 2rem;
+    }
+
+    .skills-list {
+        max-width: 100%;
+        padding: 10px;
     }
 
     .sidebar {
         width: 200px;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .skills-list {
-        max-width: 90%;
-        text-align: center;
     }
 }
