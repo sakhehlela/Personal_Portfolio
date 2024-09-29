@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     color: #fff;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #0073e6; /* Set solid blue background */
 }
 
 /* Maintain structure for sections */
@@ -15,11 +15,12 @@ section {
     justify-content: center;
     padding: 0;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Header and footer styles */
 header, footer {
-    background-color: #0073e6;
+    background-color: #005bb5; /* Darker blue for header and footer */
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -37,15 +38,15 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Paragraph styling with blue background */
+/* Paragraph styling */
 p {
     color: #fff;
     font-size: 1.2rem;
-    background-color: #0073e6;
+    background-color: #005bb5; /* Background for readability */
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
-    max-width: 90%; /* Restrict width to ensure it fits within the photo */
+    max-width: 90%; /* Restrict width */
     box-sizing: border-box;
     margin: 0 auto; /* Center the paragraph */
 }
@@ -55,7 +56,7 @@ p {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #0073e6;
+    background-color: #005bb5; /* Same darker blue */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -64,7 +65,7 @@ p {
 }
 
 .cv-link:hover {
-    background-color: #005bb5;
+    background-color: #003d80; /* Darker blue on hover */
 }
 
 /* Sidebar styling */
@@ -74,7 +75,7 @@ p {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #0073e6;
+    background-color: #005bb5;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
     z-index: 1000;
@@ -109,7 +110,7 @@ p {
     color: white;
     cursor: pointer;
     padding: 15px;
-    text-align: right; /* Moved to the right */
+    text-align: right;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -124,13 +125,13 @@ p {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background-color: #0073e6;
+    background-color: #005bb5;
     color: white;
     border: none;
     font-size: 18px;
     position: fixed;
     top: 10px;
-    left: 30px; /* Adjusted the left position to prevent overlap */
+    left: 30px;
     z-index: 1001;
 }
 
@@ -146,44 +147,44 @@ p {
     left: 0;
 }
 
-/* Styling for the photo */
+/* Remove photo, solid background */
 .home-photo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    z-index: -1;
+    display: none; /* No background photo */
 }
 
-/* Overlay on top of the photo for text */
+/* Overlay on top of background for content */
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+    position: relative;
+    padding: 30px;
     z-index: 10;
+    background: rgba(0, 0, 0, 0.3); /* Subtle translucent background */
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
 }
 
+/* Prevent overflow of text */
 .content-section {
     position: relative;
     padding: 20px;
+    overflow: hidden;
 }
 
 /* Skills Section Specific Styling */
 .skills-list {
     list-style-type: none;
     padding: 0;
-    text-align: left; /* Align skills to the left to improve readability */
-    margin: 20px auto; /* Center the list */
-    max-width: 500px; /* Restrict the width for better visual appeal */
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px; /* Restrict width */
+    background-color: rgba(0, 0, 0, 0.3); /* Translucent background */
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .skills-list li {
-    background-color: #0073e6;
+    background-color: #005bb5;
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
@@ -192,19 +193,13 @@ p {
     text-align: center;
 }
 
-/* About section layout on mobile */
+/* Mobile adjustments */
 @media (max-width: 768px) {
     #about .overlay {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .home-photo {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
     }
 
     p {
@@ -224,3 +219,4 @@ p {
         width: 200px;
     }
 }
+
